@@ -24,7 +24,6 @@
         // Custom initialization
         items = [NSMutableArray array];
         for (int i=0; i<100; i++) {
-            
             // Make contents
             NSString *title = [NSString stringWithFormat:@"TITLE %d",i];
             NSString *desc = [NSString stringWithFormat:@"This is a description of this cell."];
@@ -46,7 +45,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
-    // Instansiate cell from Nib to set default row height.
+    // Instantiate cell from Nib to set default row height.
     UINib *nib = [UINib nibWithNibName:@"CustomCell" bundle:nil];
     CustomCell *cell = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
     self.tableView.rowHeight = cell.frame.size.height;
